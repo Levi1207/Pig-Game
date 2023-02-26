@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Свинья</title>
+  </head>
+  <body>
+    <div class="modal-window  ">
+      <button class="close-modal-window" >&times;</button>
+      <h1 class="modal__title">Добро Пожаловать В Мою Игру</h1>
+      <div class="modal__txr">
+        <p class="modal__txr-c">Игра называется <b>"Свинья"</b>, суть игры: <br></p> 
+        Вы бросаете кубик по очереди  и выпавшее число добавляется в ваше текущее очко, в любой момент вы можете эти очки добавить в ваш счет нажатием на кпоку <b>Оставить</b>, если вам выподет кубик с числом <b> 1</b> то ваши <b>текущее</b> очки обнуляются и ход переходит другому игроку, а очки которые вы добавили в ваш счет они не сгорают. <br>
+        <p class="modal__txr-c">Цель игры набрать <b>100</b> очков.</p>
+        <p class="modal__txr-c">игра разработанна Исфандиёром (Levi_Ezio)</p>
+          <div class="icons">
+              <a href="https://www.instagram.com/levi_ezio1207/" target="_blank"><img src="./img/insta.svg" alt=""></a>
+              <a href="https://t.me/Levi_Ezio" target="_blank"><img src="./img/telegram.svg" alt=""></a>
+              <a href="https://github.com/Levi1207" target="_blank"><img src="./img/github.svg" alt=""></a>
+          </div>
+      </div>
+    </div>
+    <div class="overlay "></div>
+    <div class="active-block">
+      <div class="active-player"> active player</div>
+      <div class="not-player">non-active player</div>
+      <div class="winner-player">winner</div>
+    </div>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Игрок 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Игрок 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Текущие очки</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="./img/dice1.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🐷 Новая игра</button>
+      <button class="btn btn--roll">🎲 Бросить кубик</button>
+      <button class="btn btn--hold">👌 Оставить</button>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
